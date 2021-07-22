@@ -32,7 +32,7 @@ public class Example2 implements Runnable{
         thread2.join();
 
         System.out.println(thread1.getState());
-        
+
         System.out.println("The end");
     }
 }
