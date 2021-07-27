@@ -24,11 +24,12 @@ public class Example10 {
 class RunnableImpl implements Runnable{
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName() + " begins to work");
         try {
-            Thread.sleep(500);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        System.out.println(Thread.currentThread().getName() + " ends to work");
     }
 }
