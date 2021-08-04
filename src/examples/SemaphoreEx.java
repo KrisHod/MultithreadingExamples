@@ -6,7 +6,7 @@ package examples;
 
 import java.util.concurrent.Semaphore;
 
-public class Example13 {
+public class SemaphoreEx {
     public static void main(String[] args) {
         Semaphore callBox = new Semaphore(2);
 
@@ -18,13 +18,13 @@ public class Example13 {
     }
 }
 
-class Person extends Thread{
+class Person extends Thread {
     String name;
     private Semaphore callBox;
 
-    public Person(String name, Semaphore callBox){
+    public Person(String name, Semaphore callBox) {
         this.name = name;
-        this.callBox=callBox;
+        this.callBox = callBox;
         this.start();
     }
 
@@ -38,8 +38,7 @@ class Person extends Thread{
             System.out.println(name + " finished a call");
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             callBox.release();
         }
     }

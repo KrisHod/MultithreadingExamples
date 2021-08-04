@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class Example11 {
+public class ScheduledExecutorServiceEx {
     public static void main(String[] args) throws InterruptedException {
         ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
 //        scheduledExecutorService.schedule(new RunnableImpl(), 3, TimeUnit.SECONDS);

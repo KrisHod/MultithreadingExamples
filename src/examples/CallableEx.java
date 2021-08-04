@@ -6,7 +6,7 @@ package examples;
 
 import java.util.concurrent.*;
 
-public class Example12 {
+public class CallableEx {
     static int factorialResult;
 
     public static void main(String[] args) {
