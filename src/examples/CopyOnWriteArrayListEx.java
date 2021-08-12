@@ -1,6 +1,5 @@
 package examples;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -17,7 +16,7 @@ public class CopyOnWriteArrayListEx {
 
         Runnable runnable1 = () -> {
             Iterator<String> iterator = list.iterator(); // on this line iterator was assigned values of list and he will print it Although the list has been changed with another thread
-            while (iterator.hasNext()){
+            while (iterator.hasNext()) {
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
